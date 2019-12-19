@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        input[type="checkbox"]{
+            display: none;
+        }
+        input[type="checkbox"]:checked~ul{  
+            display: none;
+        }
+    </style>
+    <!-- <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+    <title>Document</title>
+</head>
+<body>
+    <input type="checkbox" id="root">
+    <label for="root">ROOT</label>   <!-- for id root label쓰면 label 클릭시 input tag에 영향 줄 수있음-->
+    <ul>
+        <li>node1</li>
+            <ul>
+                나와
+            </ul>
+        <li>node1</li>
+    </ul>
+    
+    
+</body>
+</html>
