@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <!-- 
+        - 글자 밑줄 제거 text-decoration
+        - a태그는 기본적으로 inline -> inline 에서는 margin을 주면 좌,우만 적용
+        - inline-block 을 사용
+        - 버튼 모서리를 둥글게 border-radius
+        - trasition all (모든 변화에 효과 부여)
+        - .btn:active .btn 눌릴시 transfrom -> y축 10px 이동 -> 후에 버튼 눌림효과 5px-2px = 3px
+        - googlefont 사용
+     -->
+    <style>
+        .btn{
+            text-decoration: none;
+            font-size: 2rm;
+            color: white;
+            padding: 10px 20px 10px 20px;
+            margin: 20px;
+            display: inline-block;
+            border-radius: 10px;
+            transition: all 0.1s;
+            text-shadow: 0px -2px rgba(0, 0, 0, 0.44);
+            font-family: 'Roboto Slab', serif;
+        }
+        .btn:active{
+            transform: translateY(3px);
+        }
+        .btn.blue{
+            background-color: #1f75d9;
+            border-bottom: 5px solid #165195;
+        }
+        .btn.blue:active{
+            border-bottom: 2px solid #165195;
+        }
+        .btn.red{
+            background-color: #ff521e;
+            border-bottom: 5px solid #c1370e;
+        }
+        .btn.red:active{
+            border-bottom: 2px solid #c1370e;
+        }
+    </style>
+</head>
+<body>
+    <a class="btn blue" href="#blue">BLUE</a>
+    <a class="btn red" href="#red">RED</a>
+    
+</body>
+</html>
