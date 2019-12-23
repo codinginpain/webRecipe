@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+        각 item 태그의 부모 contatiner 태그가 무조건 있어야함 
+        flex의 사용하려면 가장 기본이 부모태그에 display:flex를 줘야함
+        flex-directtion default = "row"
+        row와 cloumn이 있음
+    -->
+    <style>
+        .container{
+            background-color: powderblue;
+            height:200px;
+            display:flex;
+            flex-direction: row;
+        }
+        .item{
+            background-color: tomato;
+            color: white;
+            border: 1px solid white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>   
