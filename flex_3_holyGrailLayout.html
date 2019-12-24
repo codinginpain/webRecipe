@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html{
+            height: 100%;
+        }
+        body{
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+        header{
+            border-bottom: 1px solid gray;
+            padding-left: 20px;
+        }
+        footer{
+            border-top: 1px solid gray;
+            padding: 20px;
+            text-align: center;
+        }
+        .content{
+            display: flex;
+        }
+        .content nav{
+            border-right: 1px solid gray;
+        }
+        .content aside{
+            border-left: 1px solid gray;
+        }
+        nav, aside{
+            flex-basis: 150px;
+            flex-shrink: 0px;
+        }
+        main{
+            padding: 10px;
+        }
+        aside{
+            padding-top: 10px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>생활코딩</h1>
+        </header>
+        <section class="content"> 
+            <nav>
+                <ul>
+                    <li>html</li>
+                    <li>css</li>
+                    <li>javascript</li>
+                </ul>
+            </nav>
+            <main>
+                생활코딩은 일반인을 위한 코딩 수업 입니다.생활코딩은 일반인을 위한 코딩 수업 입니다.생활코딩은 일반인을 위한 코딩 수업 입니다.생활코딩은 일반인을 위한 코딩 수업 입니다.생활코딩은 일반인을 위한 코딩 수업 입니다.생활코딩은 일반인을 위한 코딩 수업 입니다.생활코딩은 일반인을 위한 코딩 수업 입니다.생활코딩은 일반인을 위한 코딩 수업 입니다.생활코딩은 일반인을 위한 코딩 수업 입니다.
+            </main>
+            <aside>
+                AD
+            </aside>
+        </section> 
+        <footer>
+            <a href="http://opentutorials.org/course/1">홈페이지</a>
+        </footer>
+    </div>
+    
+</body>
+</html>
